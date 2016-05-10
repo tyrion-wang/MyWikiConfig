@@ -232,8 +232,9 @@ class VectorTemplate extends BaseTemplate {
 			<?php
 			}
 			?>
-			//访问者位置统计
-			<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=06bn2ptrbn2&amp;m=0&amp;s=220&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=0" async="async"></script>
+			<!-- 访问者位置统计-开始 -->
+			<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0g8w305gyv5&amp;m=0&amp;s=170&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=0" async="async"></script>
+			<!-- 访问者统计-结束 -->
 			<div style="clear:both"></div>
 		</div>
 		<?php $this->printTrail(); ?>
