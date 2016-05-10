@@ -193,14 +193,16 @@ class VectorTemplate extends BaseTemplate {
 					echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
 					?>></a></div>
 				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
-			</div>
-		</div>
-		<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
-			<!-- 访问者位置统计-开始 -->
+
+				<!-- 访问者位置统计-开始 -->
 			<div style="float: right;">
 				<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0g8w305gyv5&amp;m=0&amp;s=170&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=0" async="async"></script>
 			</div>
 			<!-- 访问者统计-结束 -->
+			</div>
+		</div>
+		<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
+			
 			<?php
 			foreach ( $this->getFooterLinks() as $category => $links ) {
 				?>
