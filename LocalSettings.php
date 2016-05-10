@@ -186,22 +186,6 @@ $wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc', 'mobi',
     'xls', 'pdf', 'ppt', 'docx', 'xlsx', 'pptx', 'ps'
 );
 $wgStrictFileExtensions = false;
-$wgMimeTypeBlacklist= array(
-# HTML may contain cookie-stealing JavaScript and web bugs
-‘text/html’, ‘text/javascript’, ‘text/x-javascript’, ‘application/x-shellscript’,
-# PHP scripts may execute arbitrary code on the server
-‘application/x-php’, ‘text/x-php’,
-# Other types that may be interpreted by some servers
-‘text/x-python’, ‘text/x-perl’, ‘text/x-bash’, ‘text/x-sh’, ‘text/x-csh’,
-# Client-side hazards on Internet Explorer
-‘text/scriptlet’, ‘application/x-msdownload’,
-# Windows metafile, client-side vulnerability on some systems
-‘application/x-msmetafile’,
-# A ZIP file may be a valid Java archive containing an applet which exploits the
-# same-origin policy to steal cookies
-‘application/zip’, //by baicailin
-‘application/mobi’,
-);
 #-----------------------------------------------
 
 
