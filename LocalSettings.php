@@ -231,6 +231,7 @@ function MyExtensionJavaScript( $out )
 
 
 
-#----------------在本地搜索图片------------------
-
+#----------------搜索优化-模糊搜索-----------------
+$wgSphinxSuggestMode = 'enchant';
+$wgEnableOpenSearchSuggest = true;
 #------------------------------------------------
