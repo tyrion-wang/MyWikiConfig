@@ -232,5 +232,6 @@ function MyExtensionJavaScript( $out )
 
 
 #----------------在本地搜索图片------------------
-
+$wgUploadPath = "$IP/images"
+$wgUploadDirectory = "$IP/images"
 #------------------------------------------------
