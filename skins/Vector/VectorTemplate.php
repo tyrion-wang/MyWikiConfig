@@ -211,7 +211,7 @@ class VectorTemplate extends BaseTemplate {
 			<?php
 			}
 			?>
-			<?php $footericons = $this->getFooterIcons( "icononly" );
+			<!-- <?php $footericons = $this->getFooterIcons( "icononly" );
 			if ( count( $footericons ) > 0 ) {
 				?>
 				<ul id="footer-icons" class="noprint">
@@ -231,7 +231,7 @@ class VectorTemplate extends BaseTemplate {
 				</ul>
 			<?php
 			}
-			?>
+			?> -->
 			<!-- 访问者位置统计-开始 -->
 			<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0g8w305gyv5&amp;m=0&amp;s=170&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=0" async="async"></script>
 			<!-- 访问者统计-结束 -->
