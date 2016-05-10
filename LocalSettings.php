@@ -93,7 +93,7 @@ $wgShellLocale = "en_US.utf8";
 ## Set $wgCacheDirectory to a writable directory on the web server
 ## to make your wiki go slightly faster. The directory should not
 ## be publically accessible from the web.
-#$wgCacheDirectory = "$IP/cache";
+$wgCacheDirectory = "$IP/cache";
 
 # Site language code, should be one of the list in ./languages/Names.php
 $wgLanguageCode = "zh-cn";
@@ -231,6 +231,6 @@ function MyExtensionJavaScript( $out )
 
 
 
-#-----------------在本地搜索图片-------------------
+#----------------在本地搜索图片------------------
 
 #------------------------------------------------
