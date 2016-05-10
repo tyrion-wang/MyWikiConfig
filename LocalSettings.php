@@ -228,3 +228,17 @@ function MyExtensionJavaScript( $out )
   return true;
 }
 #------------------------------------------------
+
+
+
+#-----------------在本地搜索图片-------------------
+$wgForeignFileRepos[] = [
+   'class'                   => 'ForeignAPIRepo',
+   'name'                    => 'wikimediacommons',
+   'apibase'                 => 'https://www.tyrion.wang/api.php',
+   'hashLevels'              => 2,
+   'fetchDescription'        => true,
+   'descriptionCacheExpiry'  => 43200,
+   'apiThumbCacheExpiry'     => 86400,
+];
+#------------------------------------------------
