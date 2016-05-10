@@ -74,7 +74,7 @@ $wgMemCachedServers = array();
 ## is writable, then set this to true:
 $wgEnableUploads = true;
 $wgUseImageMagick = true;
-$wgImageMagickConvertCommand = "/usr/bin/convert";
+$wgImageMagickConvertCommand = "/wiki/current/convert";
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;
