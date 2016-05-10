@@ -175,6 +175,9 @@ $wgVirtualRestConfig['modules']['parsoid']=array(
   'prefix' => 'localhost'
 
 );
+$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc',
+    'xls', 'pdf', 'ppt', 'docx', 'xlsx', 'pptx', 'ps'
+);
 #------------------------------------------------
 
 #-------------------短路径-----------------------
