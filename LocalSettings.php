@@ -153,6 +153,8 @@ $wgDefaultUserOptions['wikieditor-preview'] = 1;
 $wgDefaultUserOptions['wikieditor-publish'] = 1;
 #-------------------------------------------
 
+
+
 #------插件VisualEditor 所见即所得的编辑器------
 require_once "$IP/extensions/VisualEditor/VisualEditor.php";
 
@@ -175,22 +177,36 @@ $wgVirtualRestConfig['modules']['parsoid']=array(
   'prefix' => 'localhost'
 
 );
+#---------------------------------------------
+
+
+
+#-------------------文件上传---------------------
 $wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc', 'mobi',
     'xls', 'pdf', 'ppt', 'docx', 'xlsx', 'pptx', 'ps'
 );
-#------------------------------------------------
+$wgStrictFileExtensions = false;
+#-----------------------------------------------
+
+
 
 #-------------------短路径-----------------------
 $wgArticlePath = '/wiki/$1';
 $wgUsePathInfo = false;
-#------------------------------------------------
+#-----------------------------------------------
+
+
 
 #---------------界面支持移动设备-----------------
 require_once "$IP/extensions/MobileFrontend/MobileFrontend.php";
 $wgMFAutodetectMobileView = true;
 #------------------------------------------------
 
+
+
 $wgExternalLinkTarget='_blank'; #新窗口打开外部链接
+
+
 
 #----------------head内部添加代码------------------
 $wgHooks['BeforePageDisplay'][] = 'MyExtensionJavaScript';
