@@ -188,3 +188,24 @@ $wgMFAutodetectMobileView = true;
 #------------------------------------------------
 
 $wgExternalLinkTarget='_blank'; #新窗口打开外部链接
+
+#----------------head内部添加代码------------------
+$wgHooks['BeforePageDisplay'][] = 'MyExtensionJavaScript';
+ 
+function MyExtensionJavaScript( $out ) 
+{
+  # Merge JavaScript into OutputPage
+  $script = '<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "//hm.baidu.com/hm.js?09d31ca9a08e93dd8ddbd84c32c4c4c6";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+			</script>
+			';
+  $out->addScript( $script );
+  return true;
+}
+#------------------------------------------------
